@@ -1,0 +1,63 @@
+{
+  "livros": [
+    {
+      "id": 1,
+      "titulo": "O Senhor dos Anéis",
+      "autor": 1,
+      "isbn": "978-0395444778",
+      "data_publicacao": "1954-07-29",
+      "genero": "Fantasia",
+      "disponivel": false
+    },
+    {
+      "id": 2,
+      "titulo": "Os Miseráveis",
+      "autor": 2,
+      "isbn": "978-2253045194",
+      "data_publicacao": "1862-03-31",
+      "genero": "Romance histórico",
+      "disponivel": true
+    },
+    {
+      "id": 3,
+      "titulo": "Guerra e Paz",
+      "autor": 3,
+      "isbn": "978-5170490003",
+      "data_publicacao": "1869",
+      "genero": "Romance histórico",
+      "disponivel": true
+    }
+  ],
+  "autores": [
+    {
+      "id": 1,
+      "nome": "J.R.R. Tolkien",
+      "nacionalidade": "Britânica", 
+      "data_nascimento": "1892-01-03",
+      "obras_publicadas": [1]
+    },
+    {
+      "id": 2,
+      "nome": "Victor Hugo",
+      "nacionalidade": "Francesa",
+      "data_nascimento": "1802-02-26",
+      "obras_publicadas": [2]
+    },
+    {
+      "id": 3,
+      "nome": "Liev Tolstói",
+      "nacionalidade": "Russa",
+      "data_nascimento": "1828-09-09",
+      "obras_publicadas": [3]
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "senha": "minha_senha_segura",
+      "livros_emprestados": [1]
+    }
+  ]
+}

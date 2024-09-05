@@ -1,0 +1,23 @@
+1. Estrutura de Dados:
+
+Escolha um formato: JSON é o formato mais comum para APIs REST. Como você representará os dados que serão criados, lidos, atualizados e deletados? Pense em um dicionário Python que represente um registro.
+Banco de dados: Qual banco de dados você utilizará para armazenar os dados? SQLite é uma boa opção para começar, mas você pode explorar outros como PostgreSQL, MySQL ou MongoDB.
+ORM: Para facilitar a interação com o banco de dados, utilize um ORM como SQLAlchemy. Ele permite mapear objetos Python para tabelas do banco de dados.
+2. Rotas CRUD:
+
+Criar (Create): Implemente uma rota POST para criar um novo registro. Utilize o corpo da requisição para receber os dados e salve-os no banco de dados. Retorne o registro criado como resposta.
+Ler (Read): Implemente uma rota GET para buscar todos os registros ou um registro específico pelo ID. Utilize parâmetros de consulta na URL para filtrar os resultados.
+Atualizar (Update): Implemente uma rota PUT para atualizar um registro existente. Utilize o ID do registro na URL e o corpo da requisição para os novos dados.
+Deletar (Delete): Implemente uma rota DELETE para remover um registro específico. Utilize o ID do registro na URL.
+3. Validação de Dados:
+
+Verifique os dados: Antes de salvar ou atualizar um registro, verifique se os dados recebidos são válidos e estão no formato esperado. Utilize bibliotecas como Flask-WTF ou schemas do marshmallow para criar formulários e validar os dados.
+Tratamento de erros: Implemente mecanismos para tratar erros, como dados inválidos ou registros não encontrados. Retorne mensagens de erro claras e códigos de status HTTP apropriados.
+4. Segurança:
+
+Proteja sua API: Implemente mecanismos de autenticação e autorização para controlar o acesso aos recursos da sua API. Utilize tokens JWT ou OAuth para autenticar usuários.
+Evite SQL injection: Utilize parâmetros nomeados e escape os valores antes de inseri-los em consultas SQL para evitar ataques de injeção.
+5. Documentação:
+
+Crie uma documentação: Utilize ferramentas como Swagger UI para gerar uma documentação interativa da sua API, facilitando o uso por outros desenvolvedores.
+Exemplo Básico (sem validação e sem banco de dados):
